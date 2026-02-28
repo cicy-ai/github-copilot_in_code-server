@@ -26,4 +26,10 @@ curl -L -o copilot-1.271.0.vsix https://ghproxy.cn/https://github.com/HG-ha/gith
 echo "Installing GitHub Copilot extension..."
 code-server --install-extension copilot-1.271.0.vsix || { echo "Failed to install copilot extension"; exit 1; }
 
+echo "Downloading GitHub Copilot Chat extension..."
+curl -L -o copilot-chat-0.22.2024103102.vsix "https://marketplace.visualstudio.com/_apis/public/gallery/publishers/GitHub/vsextensions/copilot-chat/0.22.2024103102/vspackage" || { echo "Failed to download copilot-chat extension"; exit 1; }
+
+echo "Installing GitHub Copilot Chat extension..."
+code-server --install-extension copilot-chat-0.22.2024103102.vsix || { echo "Failed to install copilot-chat extension"; exit 1; }
+
 echo "Setup completed successfully!"
