@@ -4,6 +4,7 @@
 
 ### 已经过测试的功能
 1. 代码补全
+2. Copilot Chat
 
 ## 一键安装
 ```bash
@@ -31,6 +32,12 @@ curl -fsSL https://ghproxy.cn/https://github.com/HG-ha/github-copilot_in_code-se
    ```bash
    curl -L -o copilot-1.271.0.vsix https://ghproxy.cn/https://github.com/HG-ha/github-copilot_in_code-server/raw/main/copilot-1.271.0.vsix
    code-server --install-extension copilot-1.271.0.vsix
+   ```
+
+3. **安装github copilot chat**:
+   ```bash
+   curl -L -o copilot-chat-0.22.2024103102.vsix "https://marketplace.visualstudio.com/_apis/public/gallery/publishers/GitHub/vsextensions/copilot-chat/0.22.2024103102/vspackage"
+   code-server --install-extension copilot-chat-0.22.2024103102.vsix
    ```
 
 ## 可能出现的问题
